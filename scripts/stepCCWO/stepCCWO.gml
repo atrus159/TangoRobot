@@ -38,16 +38,24 @@ if movement_percentage < first_checkpoint {
 
 if movement_style == "normal" and movement_percentage >= first_checkpoint and movement_percentage < second_checkpoint {
 	//move head shoulders and hips
-	left_x = initial_l_x - dsin(movement_angle)*speed_transfering*movement_percentage* movement_length
-	left_y = initial_l_y - dcos(movement_angle)*speed_transfering*movement_percentage* movement_length
-	x = initial_x + dsin(movement_angle)*speed_transfering*movement_percentage* movement_length
-	y = initial_y + dcos(movement_angle)*speed_transfering*movement_percentage* movement_length
-	right_x = initial_r_x - dsin(movement_angle)*speed_transfering*movement_percentage* movement_length
-	right_y = initial_r_y - dcos(movement_angle)*speed_transfering*movement_percentage* movement_length
+	var movement_remaining = movement_percentage - first_checkpoint
+	left_x = initial_l_x + dsin(movement_angle)* movement_length - dsin(movement_angle)*speed_transfering*movement_remaining* movement_length
+	left_y = initial_l_y + dcos(movement_angle)* movement_length - dcos(movement_angle)*speed_transfering*movement_remaining* movement_length
+	x = initial_x + dsin(movement_angle)*speed_transfering*movement_remaining* movement_length
+	y = initial_y + dcos(movement_angle)*speed_transfering*movement_remaining* movement_length
+	right_x = initial_r_x - dsin(movement_angle)*speed_transfering*movement_remaining* movement_length
+	right_y = initial_r_y - dcos(movement_angle)*speed_transfering*movement_remaining* movement_length
 }
 
 // move right foot.
 if movement_percentage >= second_checkpoint  {
-	right_x = initial_r_x + dsin(movement_angle)*speed_spreading *movement_percentage * movement_length
-	right_y = initial_r_y + dcos(movement_angle)*speed_spreading *movement_percentage* movement_length
+	//snap to final position
+	left_x = initial_l_x + dsin(movement_angle)* movement_length
+	left_y = initial_l_y + dcos(movement_angle)* movement_length
+	x = initial_x + dsin(movement_angle)* movement_length
+	y = initial_y + dcos(movement_angle)* movement_length
+	//move foot = initial + changing - offset
+	var movement_remaining = movement_percentage- second_checkpoint
+	right_x = initial_r_x + dsin(movement_angle)*speed_spreading *movement_remaining * movement_length - dsin(movement_angle)* movement_length
+	right_y = initial_r_y + dcos(movement_angle)*speed_spreading *movement_remaining * movement_length - dcos(movement_angle)* movement_length
 }
