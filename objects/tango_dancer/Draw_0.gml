@@ -1,0 +1,5 @@
+draw_sprite_ext(foot_sprt,-1,x+lengthdir_x(left_x,facing+90)+lengthdir_x(left_y,facing),y+lengthdir_y(left_x,facing+90)+lengthdir_y(left_y,facing),1,1,facing+left_facing,c_white,1)
+draw_sprite_ext(foot_sprt,-1,x+lengthdir_x(right_x,facing+90)+lengthdir_x(right_y,facing),y+lengthdir_y(right_x,facing+90)+lengthdir_y(right_y,facing),1,1,facing+right_facing,c_white,1)
+draw_sprite_ext(hips_sprt,-1,x+lengthdir_x(hip_offset,(facing+hip_facing)),y+lengthdir_y(hip_offset,(facing+hip_facing)),1,1,facing+hip_facing,c_white,1)
+draw_sprite_ext(sholder_sprt,-1,x+lengthdir_x(sholder_offset,(facing+sholder_facing)),y+lengthdir_y(sholder_offset,(facing+sholder_facing)),1,1,facing+sholder_facing,c_white,1)
+draw_sprite_ext(head_sprt,-1,x+lengthdir_x(head_offset,(facing+head_facing)),y+lengthdir_y(head_offset,(facing+head_facing)),1,1,facing+head_facing,c_white,1)

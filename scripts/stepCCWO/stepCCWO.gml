@@ -22,7 +22,7 @@ if movement_style != "normal" or movement_intrusion != "none" {
 }
 // Move left foot
 // foward is zero degrees
-if movement_percentage == 0 {
+if(movement_percentage == 0){
 	var initial_l_x = left_x
 	var initial_l_y = left_y
 	var initial_x = x
@@ -31,12 +31,12 @@ if movement_percentage == 0 {
 	var initial_r_y = right_y
 }
 
-if movement_percentage < first_checkpoint {
+if(movement_percentage < first_checkpoint){
 	left_x = initial_l_x + dsin(movement_angle)*speed_spreading *movement_percentage * movement_length
 	left_y = initial_l_y + dcos(movement_angle)*speed_spreading *movement_percentage* movement_length
 }
 
-if movement_style == "normal" and movement_percentage >= first_checkpoint and movement_percentage < second_checkpoint {
+if(movement_style == "normal" and movement_percentage >= first_checkpoint and movement_percentage < second_checkpoint){
 	//move head shoulders and hips
 	var movement_remaining = movement_percentage - first_checkpoint
 	left_x = initial_l_x + dsin(movement_angle)* movement_length - dsin(movement_angle)*speed_transfering*movement_remaining* movement_length
