@@ -31,14 +31,6 @@
     },
     "resources": [
         {
-            "Key": "0882c91e-200a-41cd-b3f0-bad383c7f8b0",
-            "Value": {
-                "id": "89063242-7e0e-48a1-8784-863dc6593fc4",
-                "resourcePath": "objects\\character_part\\character_part.yy",
-                "resourceType": "GMObject"
-            }
-        },
-        {
             "Key": "092fc92e-98df-4db1-a764-aec961b56af9",
             "Value": {
                 "id": "b5836da9-07af-4762-8306-4299778d23bd",
@@ -55,26 +47,10 @@
             }
         },
         {
-            "Key": "1475145b-22f6-43e9-af39-7f315f8aaad5",
-            "Value": {
-                "id": "e92fc604-5612-4e70-a687-319d05c80014",
-                "resourcePath": "objects\\object2\\object2.yy",
-                "resourceType": "GMObject"
-            }
-        },
-        {
-            "Key": "19e8a517-c8a3-4508-b611-9fe670eaa61e",
-            "Value": {
-                "id": "7f093b5d-7b6b-49ea-a5d5-922378854f73",
-                "resourcePath": "objects\\object0\\object0.yy",
-                "resourceType": "GMObject"
-            }
-        },
-        {
             "Key": "2a8d7b79-bf25-4466-990f-0967a69f1488",
             "Value": {
                 "id": "63c7ef1b-f8fe-4afa-a44e-e04920b6a034",
-                "resourcePath": "sprites\\feet_sprt\\feet_sprt.yy",
+                "resourcePath": "sprites\\foot_sprt\\foot_sprt.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -135,14 +111,6 @@
             }
         },
         {
-            "Key": "9ba90247-c3c9-4945-8fbf-88d491f4be99",
-            "Value": {
-                "id": "6cb44a3f-37d5-4a46-8e56-65899e6eddc6",
-                "resourcePath": "objects\\object1\\object1.yy",
-                "resourceType": "GMObject"
-            }
-        },
-        {
             "Key": "a9188620-a624-4a5a-83ae-a1b53faf038b",
             "Value": {
                 "id": "ba974471-ad23-4838-87fd-1b37bd5a607b",
@@ -164,6 +132,14 @@
                 "id": "b15d54d5-3eb6-4756-8b3b-75930966fe4f",
                 "resourcePath": "views\\adb7f967-da19-4dcf-805e-ab86d209d815.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "b01b3ba3-fdaf-444e-b09c-97dbe82366f8",
+            "Value": {
+                "id": "17fef742-b9d2-4b58-a948-ecf7c5359750",
+                "resourcePath": "objects\\tango_dancer\\tango_dancer.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -196,22 +172,6 @@
                 "id": "9c546b80-1616-4388-8df0-40cb95c5eb93",
                 "resourcePath": "views\\cede4450-9e9d-40b7-926e-345b0849e5a7.yy",
                 "resourceType": "GMFolder"
-            }
-        },
-        {
-            "Key": "d13b2a01-76ea-4958-ba3f-5dfb63915579",
-            "Value": {
-                "id": "41d5d11d-e6c5-4a5b-a739-4b632ebfdf82",
-                "resourcePath": "objects\\object3\\object3.yy",
-                "resourceType": "GMObject"
-            }
-        },
-        {
-            "Key": "d71a6c9f-4de9-49df-9d3c-609cbf69c42e",
-            "Value": {
-                "id": "2077d2c5-96bb-462f-a683-4d623ea5efa3",
-                "resourcePath": "sprites\\sprite3\\sprite3.yy",
-                "resourceType": "GMSprite"
             }
         },
         {
