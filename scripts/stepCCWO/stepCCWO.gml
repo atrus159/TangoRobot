@@ -3,7 +3,7 @@ var movement_length = argument1
 var movement_style = argument2
 var movement_intrusion = argument3
 var movement_duration =  argument4
-var movement_percentage = (argument5 mod movement_duration) div movement_duration
+var movement_percentage = (argument5 mod movement_duration)/movement_duration
 // some magic timing numbers
 var first_checkpoint = .33
 var second_checkpoint = .66
@@ -23,12 +23,12 @@ if movement_style != "normal" or movement_intrusion != "none" {
 // Move left foot
 // foward is zero degrees
 if(movement_percentage == 0){
-	var initial_l_x = left_x
-	var initial_l_y = left_y
-	var initial_x = x
-	var initial_y = y
-	var initial_r_x = right_x
-	var initial_r_y = right_y
+	initial_l_x = left_x
+	initial_l_y = left_y
+	initial_x = x
+	initial_y = y
+	initial_r_x = right_x
+	initial_r_y = right_y
 }
 
 if(movement_percentage < first_checkpoint){
@@ -48,7 +48,7 @@ if(movement_style == "normal" and movement_percentage >= first_checkpoint and mo
 }
 
 // move right foot.
-if movement_percentage >= second_checkpoint  {
+if(movement_percentage >= second_checkpoint){
 	//snap to final position
 	left_x = initial_l_x + dsin(movement_angle)* movement_length
 	left_y = initial_l_y + dcos(movement_angle)* movement_length
