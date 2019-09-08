@@ -14,4 +14,5 @@ right_facing = 0
 
 rest_position = [5,0,-6,90,0,0,0,-20,27,20,27,0,0]
 t = 40
-maxT = 30
+maxT = 29
+step_type = "none"
